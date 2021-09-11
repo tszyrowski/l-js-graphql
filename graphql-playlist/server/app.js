@@ -5,10 +5,11 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+console.log(`my pass: ${process.env.REACT_APP_MONGODB_PASS}`)
 mongoose.connect(
     `mongodb+srv://t-gql-ninja:${
         process.env.REACT_APP_MONGODB_PASS
-    }@gql-ninja.jdxic.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+    }@gql-tom.jdxic.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 );
 mongoose.connection.once('open', () => {
     console.log("Connected to database");
