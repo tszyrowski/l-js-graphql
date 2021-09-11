@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 mongoose.connect(
-    'mongodb+srv://t-gql-ninja:haslo1@gql-ninja.jdxic.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://t-gql-ninja:<password>@gql-ninja.jdxic.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 );
 mongoose.connection.once('open', () => {
     console.log("Connected to database");
