@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 console.log(`my pass: ${process.env.REACT_APP_MONGODB_PASS}`)
+
 mongoose.connect(
     `mongodb+srv://t-gql-ninja:${
         process.env.REACT_APP_MONGODB_PASS
